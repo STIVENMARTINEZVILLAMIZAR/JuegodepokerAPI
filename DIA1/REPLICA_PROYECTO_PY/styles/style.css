@@ -1,4 +1,22 @@
 *{
     margin:0%;
-    
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container1{
+
+  display: flex;
+  position: relative;
+  background-color: white;
+  flex-direction: column;
+  width: 100vi;
+  height: 50vi;
+
+
 }
