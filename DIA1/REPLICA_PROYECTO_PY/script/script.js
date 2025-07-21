@@ -32,8 +32,33 @@ Seleccione una opción:
     let opcion = prompt("Seleccione una opción: ")
 
     if (opcion == "1") {
+
+
         let gasto = prompt("Ingrese el monto del gasto: ")
         registrarGasto(gasto)
+       
+        let descripcion = prompt("Ingrese la descripción del gasto: ")
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     } else if (opcion == "2") {
         verGastos()
 
@@ -52,4 +77,6 @@ Seleccione una opción:
     }
 }
 
-let registrarGasto =  prompt("Ingrese el monto del gasto: ")
+
+
+
