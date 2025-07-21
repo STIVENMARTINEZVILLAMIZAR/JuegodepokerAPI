@@ -1,48 +1,10 @@
 *{
-    margin:0%;
-    padding: 0%;
+    margin:0vi;
+    padding: 0vi;
     box-sizing: border-box;
 }
 
 body{
     background-color: black;
     font-family: 'Times New Roman', Times, serif;
-}
-
-.container1{
-
-  display: flex;
-  position: relative;
-  background-color: white;
-  flex-direction: column;
-  width: 45vi;
-  height: 25vi;
-  justify-content: center;
-  justify-items: center;
-  left: 30vi;
-  top: 10vi;
-
-}
-
-h1{
-  position: relative;
-  left: 1vi;
-}
-
-
-
-h2{
-  position: relative;
-  left: 10vi;
-}
-
-
-a{
-  position: relative;
-  left: 10vi;
-}
-
-h5{
-  position: relative;
-  left: 18vi;
 }
