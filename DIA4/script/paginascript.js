@@ -82,27 +82,27 @@ let menudehamburguesa = prompt(`
 =============================================
       Menu de Hamburguesas
 =============================================
-     1.Hamburguesa Clasica")
-      nombre: Clásica,")
-      categoria:  Clásica,")
-      ingredientes: Pan, Carne de res, Queso cheddar, Lechuga, Tomate, Cebolla, Mayonesa, Ketchup.")
-      precio: 10,")
-      chef: ChefA")
+     1.Hamburguesa Clasica
+      nombre: Clásica
+      categoria:  Clásica
+      ingredientes: Pan, Carne de res, Queso cheddar, Lechuga, Tomate, Cebolla, Mayonesa, Ketchup.
+      precio: 10
+      chef: ChefA
 =============================================
-     2.Hamburguesa Vegetariana")
-      nombre: Vegetariana,")
-      categoria: Vegetariana,")
-      ingredientes: Pan integral,Hamburguesa de lentejas, Queso suizo, Espinacas, Cebolla morada, Aguacate, Mayonesa vegana.")
-      precio: 8,")
-      chef: ChefB")
+     2.Hamburguesa Vegetariana
+      nombre: Vegetariana,
+      categoria: Vegetariana,
+      ingredientes: Pan integral,Hamburguesa de lentejas, Queso suizo, Espinacas, Cebolla morada, Aguacate, Mayonesa vegana.
+      precio: 8
+      chef: ChefB
 =============================================
-     3.Hamburguesas Premium")
+     3.Hamburguesas Premium
 
-      nombre: Doble Carne,")
-      categoria: Gourmet,")
-      ingredientes: Pan de sésamo, Doble carne de res, Queso cheddar, Bacon, Lechuga, Cebolla caramelizada, Salsa BBQ.")
-      precio: 12,")
-      chef:  ChefC")
+      nombre: Doble Carne
+      categoria: Gourmet
+      ingredientes: Pan de sésamo, Doble carne de res, Queso cheddar, Bacon, Lechuga, Cebolla caramelizada, Salsa BBQ.
+      precio: 12,
+      chef:  ChefC
 
     
    `)
