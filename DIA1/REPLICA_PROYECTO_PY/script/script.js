@@ -35,32 +35,33 @@ Seleccione una opción:
 
 
         let gasto = prompt("Ingrese el monto del gasto: ")
-        registrarGasto(gasto)
        
         let descripcion = prompt("Ingrese la descripción del gasto: ")
- 
+    
+        let categoria = prompt("Comida , Transporte, Entretenimiento, otros")
+
+        let dic = {
+            "gasto": gasto,
+            "descripcion": descripcion,
+            "categoria": categoria
+        }
+        
+        gastos.push(dic)
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        
 
     } else if (opcion == "2") {
         verGastos()
+
+
+
+
+
+
+
 
     } else if (opcion == "3") {
         let total = calcularTotalGastos()
