@@ -36,9 +36,108 @@ console.log ("6. Consultar")
 console.log ("7. Salir")
 
 
-let seleccionar= prompt ("seleccione una opcion:")
 
-   let consultar = prompt (`
+
+let opcion= prompt ("seleccione una opcion:")
+
+if (opcion == "1") {
+
+let menudehamburguesa = prompt(`
+=============================================
+      Menu de Hamburguesas
+=============================================
+     1.Hamburguesa Clasica
+      nombre: Clásica
+      categoria:  Clásica
+      ingredientes: Pan, Carne de res, Queso cheddar, Lechuga, Tomate, Cebolla, Mayonesa, Ketchup.
+      precio: 10
+      chef: ChefA
+=============================================
+     2.Hamburguesa Vegetariana
+      nombre: Vegetariana,
+      categoria: Vegetariana,
+      ingredientes: Pan integral,Hamburguesa de lentejas, Queso suizo, Espinacas, Cebolla morada, Aguacate, Mayonesa vegana.
+      precio: 8
+      chef: ChefB
+=============================================
+     3.Hamburguesas Premium
+
+      nombre: Doble Carne
+      categoria: Gourmet
+      ingredientes: Pan de sésamo, Doble carne de res, Queso cheddar, Bacon, Lechuga, Cebolla caramelizada, Salsa BBQ.
+      precio: 12,
+      chef:  ChefC
+
+    
+   `)
+
+   console.log(menudehamburguesa);
+
+    let opcion = prompt("Escoje tu hamburguesa");
+    
+
+
+} else if (opcion == "2") {
+
+    // Añadir una nueva hamburguesa
+
+    let Añadir = prompt(`
+
+            1.hamburguesas
+            2.Ingredientes
+            3.Chefs
+            4.Categorías
+        
+        `);
+
+
+
+
+
+
+
+
+
+
+
+
+} else if (opcion == "3") {
+    
+    let categoria = prompt ("Ingrese la categoria de la hamburguesa: clásica, vegetariana, premium")
+
+    let descripcion = prompt ("Ingrese la descripcion de la hamburguesa: ")
+
+    let dic = {
+        "categoria": categoria,
+        "descripcion": descripcion
+    };
+
+    gastos.push(dic);
+
+
+} else if (opcion == "4") {
+    
+    let actualizar = prompt("¿Desea actualizar su pedido? (si/no)");
+
+    if (actualizar.toLowerCase() === "si") {
+        let nuevoPedido = prompt("Ingrese los nuevos detalles de su pedido: ");
+        console.log(`Pedido actualizado: ${nuevoPedido}`);
+    } else {
+        console.log("Pedido no actualizado.");
+    }
+
+
+
+
+
+
+
+
+
+} else if (opcion == "6") {
+    
+    
+    let consultar = prompt (`
 
  1. Encontrar todos los ingredientes con stock menor a 400.
  2. Encontrar todas las hamburguesas de la categoría “Vegetariana”.
@@ -124,102 +223,9 @@ console.log("38. Encuentra el chef que ha preparado hamburguesas con el mayor n�
 console.log("39. Encontrar el precio promedio de las hamburguesas en cada categoría.")
 console.log("40. Listar los chefs y la hamburguesa más cara que han preparado.")
 
-let opcion= prompt ("seleccione una opcion:")
-
-if (opcion == "1") {
-
-let menudehamburguesa = prompt(`
-=============================================
-      Menu de Hamburguesas
-=============================================
-     1.Hamburguesa Clasica
-      nombre: Clásica
-      categoria:  Clásica
-      ingredientes: Pan, Carne de res, Queso cheddar, Lechuga, Tomate, Cebolla, Mayonesa, Ketchup.
-      precio: 10
-      chef: ChefA
-=============================================
-     2.Hamburguesa Vegetariana
-      nombre: Vegetariana,
-      categoria: Vegetariana,
-      ingredientes: Pan integral,Hamburguesa de lentejas, Queso suizo, Espinacas, Cebolla morada, Aguacate, Mayonesa vegana.
-      precio: 8
-      chef: ChefB
-=============================================
-     3.Hamburguesas Premium
-
-      nombre: Doble Carne
-      categoria: Gourmet
-      ingredientes: Pan de sésamo, Doble carne de res, Queso cheddar, Bacon, Lechuga, Cebolla caramelizada, Salsa BBQ.
-      precio: 12,
-      chef:  ChefC
-
-    
-   `)
-
-   console.log(menudehamburguesa);
-
-    let opcion = prompt("Escoje tu hamburguesa");
-    
-
-
-} else if (opcion == "2") {
-
-    // Aquí se pueden agregar los ingredientes de la hamburguesa
-
-    let ingredientes= prompt ("ingrese los ingredientes de la hamburguesa:  ")
-
-    let nombre =prompt ("nombre de la hamburguesa: ")
-
-    let categoria = prompt ("categoria de la hamburguesa: ")
-
-    let descripcion = prompt ("descripcion de los ingredientes hamburguesa: ")
-
-    let dic= {
-        "ingredientes": ingredientes,
-        "nombre": nombre,
-        "categoria": categoria,
-        "descripcion": descripcion
-    };
-
-    gastos.push(dic)
-
-
-
-} else if (opcion == "3") {
-    
-    let categoria = prompt ("Ingrese la categoria de la hamburguesa: clásica, vegetariana, premium")
-
-    let descripcion = prompt ("Ingrese la descripcion de la hamburguesa: ")
-
-    let dic = {
-        "categoria": categoria,
-        "descripcion": descripcion
-    };
-
-    gastos.push(dic);
-
-
-} else if (opcion == "4") {
-    
-    let actualizar = prompt("¿Desea actualizar su pedido? (si/no)");
-
-    if (actualizar.toLowerCase() === "si") {
-        let nuevoPedido = prompt("Ingrese los nuevos detalles de su pedido: ");
-        console.log(`Pedido actualizado: ${nuevoPedido}`);
-    } else {
-        console.log("Pedido no actualizado.");
-    }
-
-
-
-
-
-}else if (opcion == "5") {
+}else if (opcion == "7") {
     console.log("Gracias por usar el simulador de gastos de la cafetería. ¡Hasta luego!");
     boleanito = false;
-} else {
-    console.log("Opción no válida. Por favor, intente nuevamente.");
-
-}
+} else
+    console.log("Opción no válida. Por favor, intente nuevamente.")
 }
