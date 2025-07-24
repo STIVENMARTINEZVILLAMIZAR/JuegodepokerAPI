@@ -2,6 +2,88 @@
 // ######### QUIZ #####
 // ###################################
 
+let ingredientes = 
+[ 
+    {
+        "nombre": "Pan",
+        "descripcion": "Pan de hamburguesa clásico",
+        "precio": 2.5,
+        "stock": 500
+    },
+    {
+        "nombre": "Carne de res",
+        "descripcion": "Carne de res jugosa y sabrosa",
+        "precio": 8,
+        "stock": 300
+    },
+    {
+        "nombre": "Queso cheddar",
+        "descripcion": "Queso cheddar derretido",
+        "precio": 1.5,
+        "stock": 200
+    }
+]
+
+
+let hamburguesas =
+[
+    {
+        "nombre": "Clásica",
+        "categoria": "Clásica",
+        "ingredientes": ["Pan", "Carne de res", "Queso cheddar", "Lechuga", "Tomate", "Cebolla", "Mayonesa", "Ketchup"],
+        "precio": 10,
+        "chef": "ChefA"
+    },
+    {
+        "nombre": "Vegetariana",
+        "categoria": "Vegetariana",
+        "ingredientes": ["Pan integral", "Hamburguesa de lentejas", "Queso suizo", "Espinacas", "Cebolla morada", "Aguacate", "Mayonesa vegana"],
+        "precio": 8,
+        "chef": "ChefB"
+    },
+    {
+        "nombre": "Doble Carne",
+        "categoria": "Gourmet",
+        "ingredientes": ["Pan de sésamo", "Doble carne de res", "Queso cheddar", "Bacon", "Lechuga", "Cebolla caramelizada", "Salsa BBQ"],
+        "precio": 12,
+        "chef": "ChefC"
+    }
+]
+
+let chefs =
+[
+    {
+        "nombre": "ChefA",
+        "especialidad": "Carnes"
+    },
+    {
+        "nombre": "ChefB",
+        "especialidad": "Cocina Vegetariana"
+    },
+    {
+        "nombre": "ChefC",
+        "especialidad": "Gourmet"
+    }
+]
+
+
+
+let categorias =
+[
+    {
+        "nombre": "Clásica",
+        "descripcion": "Hamburguesas clásicas y sabrosas"
+    },
+    {
+        "nombre": "Vegetariana",
+        "descripcion": "Hamburguesas sin carne, perfectas para vegetarianos"
+    },
+    {
+        "nombre": "Gourmet",
+        "descripcion": "Hamburguesas gourmet con ingredientes premium"
+    }
+]
+
 
 
 
@@ -90,13 +172,66 @@ let menudehamburguesa = prompt(`
         
         `);
 
+       
+    let hamburguesa = prompt("Ingrese el nombre de la hamburguesa: ");
+    let categoria = prompt("Ingrese la categoría de la hamburguesa: ");
+    let ingredientes = prompt("Ingrese los ingredientes de la hamburguesa (separados por comas): ");
+    let precio = parseFloat(prompt("Ingrese el precio de la hamburguesa: "));
+    let chef = prompt("Ingrese el nombre del chef que preparó la hamburguesa: ");
+    
+    let dic ={
+        "nombre": hamburguesa,
+        "categoria": categoria,
+        "ingredientes": ingredientes.split(",").map(ing => ing.trim()),
+        "precio": precio,
+        "chef": chef
+    }
+   
+
+      gastos.push(dic);
+
+    
+      // Añadir un nuevo ingrediente
+
+      let ingrediente = prompt("Ingrese el nombre del ingrediente: ");
+      let descripcion = prompt("Ingrese la descripción del ingrediente: ");
+      let precioIngrediente = parseFloat(prompt("Ingrese el precio del ingrediente: "));
+      let stock = parseInt(prompt("Ingrese el stock del ingrediente: "));
+      
+      
+      let dicIngrediente = {
+            "nombre": ingrediente,
+            "descripcion": descripcion,
+            "precio": precioIngrediente,
+            "stock": stock
+        };
+
+        gastos.push(dicIngrediente);
 
 
+        // Añadir un nuevo chef
 
+        let nombreChef = prompt("Ingrese el nombre del chef: ");
+        let especialidad = prompt("Ingrese la especialidad del chef: ");
 
+        let dicChef = {
+            "nombre": nombreChef,
+            "especialidad": especialidad
+        };
 
+        gastos.push(dicChef);
+    
 
+        // Añadir una nueva categoría
 
+        let nombreCategoria = prompt("Ingrese el nombre de la categoría: ");
+        let descripcionCategoria = prompt("Ingrese la descripción de la categoría: ");
+        let dicCategoria = {
+            "nombre": nombreCategoria,
+            "descripcion": descripcionCategoria
+        };
+
+        gastos.push(dicCategoria);
 
 
 
