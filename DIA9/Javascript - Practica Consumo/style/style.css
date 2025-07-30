@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+}
+
+h1 {
+    margin: 0 auto;
+    background: linear-gradient(rgb(255, 255, 255), rgb(196, 111, 111));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+input {
+    border: 1px solid rgb(245, 0, 0);
+    border-radius: 2vh;
+    height: 2rem;
+    padding-left: 2rem;
+}
+
+input:focus {
+    border: 1px solid gray;
+    border-color: aliceblue;
+}
+
+.Tarjeta {
+    background-color: rgb(15, 14, 14);
+    border-radius: 2vh;
+    margin-top: 2rem;
+    padding: 5vw;
+    color: rgb(248, 4, 4);
+}
+
+div {
+    margin-bottom: 2rem;
+}
+
+p {
+    border-bottom: 1px solid gray;
+}
+
+span {
+    width: 90%;
+    color: rgb(255, 18, 10);
+}
