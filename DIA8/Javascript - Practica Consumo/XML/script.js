@@ -44,3 +44,7 @@ function buscarPersonaje() {
     };
     xhr.send();
 };
+
+window.addEventListener('load', function () {
+    showPeoples();
+});
