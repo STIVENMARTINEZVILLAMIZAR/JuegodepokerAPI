@@ -32,3 +32,15 @@ function buscarPersonaje() {
                     `;
                     mainBox.appendChild(div);
                 }
+
+                  } else {
+                let loading = document.createElement("p");
+                loading.innerText = 'Cargando...'
+            };
+            
+        } catch (error) {
+            console.log('Error inesperado: ' + error)
+        }
+    };
+    xhr.send();
+};
