@@ -39,12 +39,12 @@ function buscarPersonaje() {
             };
             
         } catch (error) {
-            console.log('Error inesperado: ' + error)
+            console.log('Error: ' + error)
         }
     };
     xhr.send();
 };
 
 window.addEventListener('load', function () {
-    showPeoples();
+    buscarPersonaje();
 });
