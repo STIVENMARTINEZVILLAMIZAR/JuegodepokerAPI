@@ -1,0 +1,28 @@
+*{
+margin: 0%;
+padding: 0%;
+box-sizing: border-box;
+}
+
+
+body{
+    background-color: #000000;
+    font-family: 'new times roman', Times, serif;
+}
+
+.container1{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h1{
+    position:relative;
+    color: goldenrod;
+    font-size: 3rem;
+    text-align: center;
+    bottom: 25vi;
+}

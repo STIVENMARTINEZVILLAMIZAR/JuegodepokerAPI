@@ -21,6 +21,8 @@ h1{
     position: relative;
     justify-content: center;
     left: 40%;
+    width: 40vi;
+    height: 60vi;
 }
 
 body{
@@ -33,15 +35,26 @@ body{
 }
 
 input[placeholder="ingrese un nombre...."]{
+    position: absolute;
     padding: 10px;
     width: 250px;
     font-size: 16px;
     margin-left: 10px;
     bottom: 25vi;
+    
 
 }
 
-button{
+.cuadrotexto{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    bottom: 20vi;
+    left: 50vi;
+    
+}
+
+.button{
     display: flex;
     position: relative;
     font-size: 16px;
@@ -49,8 +62,9 @@ button{
     background-color: black;
     color:white;
     padding: 20px;
-    le
+    
 }
+
 button:hover{
     background-color: goldenrod;
     cursor:url('../media/pickleRick.png'),auto;
@@ -63,3 +77,18 @@ button:hover{
     justify-content: center;
     gap: 20px;
 }
+
+.boton1{
+ position: relative;
+    bottom: 15vi;
+    left: 45vi;
+    width: 70%;
+   
+}
+
+.boton2{
+    position: relative;
+    bottom: 17vi;
+    left: 65vi;
+    width: 70%;
+} 
