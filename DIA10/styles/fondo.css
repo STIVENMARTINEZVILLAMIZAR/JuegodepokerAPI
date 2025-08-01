@@ -1,18 +1,16 @@
 *{
-margin: 0%;
-padding: 0%;
-box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
 }
 
-
 body{
-    
-    font-family: 'new times roman', Times, serif;
     background-image: url('../media/fondo-mesa-poquer-diseno-plano_23-2151047002.avif');
+    background-color: #000000;
+    font-family: 'new times roman', Times, serif;
 }
 
 .container1{
-    border: 10px solid goldenrod;
     position: absolute;
     width: 100vw;
     height: 100vh;
@@ -21,20 +19,23 @@ body{
     align-items: center;
 }
 
-
 h1{
     position:relative;
     color: goldenrod;
     font-size: 3rem;
     text-align: center;
-    bottom: 25vi;
+    bottom: 15vi;
+    left: 15vi;
+
 }
 
-p{
+.fondo {
     position: relative;
-    color: white;
-    font-size: 1.5rem;
-    text-align: center;
-    bottom: 20vi;
-    right: 10vi;
+    width: 50vh;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1000px;
+
 }
