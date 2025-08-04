@@ -2,6 +2,7 @@ let id = null
 
 
 function jugar() {
+  
     const jugar=  new XMLHttpRequest();
     url='https://deckofcardsapi.com/api/deck/new/';
     jugar.open('get',url,true);
@@ -12,7 +13,7 @@ function jugar() {
 
         id = todasCartas.deck_id
         console.log(todasCartas)
-         traerCartas()
+         barajarMazo();
     }
     };
   
@@ -24,7 +25,7 @@ function jugar() {
 function traerCartas() {
 
     const carta=  new XMLHttpRequest();
-    url = `https://deckofcardsapi.com/api/deck/${id}/draw/?count=52`
+    url = `https://deckofcardsapi.com/api/deck/${id}/draw/?count=2`
     carta.open('get',url,true);
     carta.onreadystatechange= function(){ if (carta.readyState===4 && carta.status===200) 
         { 
@@ -83,3 +84,16 @@ carta.send();
 
 
  }
+
+function barajarMazo() {
+    const barajar = new XMLHttpRequest();
+    const url = `https://deckofcardsapi.com/api/deck/${id}/shuffle/`;
+    barajar.open('GET', url, true);
+    barajar.onreadystatechange = function () {
+        if (barajar.readyState === 4 && barajar.status === 200) {
+            console.log("Mazo barajado");
+            traerCartas(); 
+        }
+    };
+    barajar.send();
+}
