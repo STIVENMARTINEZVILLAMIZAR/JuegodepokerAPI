@@ -2,40 +2,78 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-}
-
-body{
-    background-image: url('../media/fondo-mesa-poquer-diseno-plano_23-2151047002.avif');
-    background-color: #000000;
     font-family: 'new times roman', Times, serif;
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+    background-image: url('../media/fondo-mesa-poquer-diseno-plano_23-2151047002.avif');
+    width: 100%;
+    height: 100%;
+    justify-content: center    ;
+    align-items: center;
+   
+    
+}
+
 .container1{
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
+    width: 100%;
+ 
+
 }
 
-h1{
-    position:relative;
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.titulo h1 {
     color: goldenrod;
-    font-size: 3rem;
-    text-align: center;
-    bottom: 15vi;
-    left: 15vi;
+}
+
+.container-reglas {
+    display: flex;
+    flex-direction: row;
+    gap: 9.5rem;
+}
+
+.container-reglas button {
+    background-color: goldenrod;
+    width: 6vw;
+    border-radius: 0.5rem;
+    height: 3vw;
+    
+}
+
+.container-jugar button {
+    background-color: rgb(32, 218, 41);
+    width: 6vw;
+    
+    border-radius: 0.5rem;
+}
+
+.containerCartas {
+display: flex;
+flex-direction: row;
+gap: 2rem;
+    
+}
+
+.containerCartas img{
+   
+   width: 15vw;
 
 }
 
-.fondo {
-    position: relative;
-    width: 50vh;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 1000px;
-
+.cartaDecoracion{
+ position: relative;
+ left: 25vi;
 }
