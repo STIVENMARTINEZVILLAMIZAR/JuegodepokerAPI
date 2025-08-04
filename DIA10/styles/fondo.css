@@ -96,10 +96,4 @@ gap: 2rem;
     color: goldenrod;
 }
 
-.cartaDecoracion{
-    z-index: 1;
-    position: relative;
-    bottom: 25vi;
-    left: 25vi;
-    height: 65vh;
-}
+
