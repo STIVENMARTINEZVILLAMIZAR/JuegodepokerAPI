@@ -36,15 +36,15 @@ function buscarPersonaje() {
                         let division = document.getElementById("resultados");
                         division.innerHTML += `
                         <div class="card">
-            <img src="${daticos["results"][i]["image"]}" alt="">
+            <img src="${daticos["results"][i]["image"]["url"]}" alt="">
             <h3>${daticos["results"][i]["name"]}</h3>
-            <p><strong>Nombre completo:</strong>${daticos["results"][i]["nombre completo"]}</p>
-            <p><strong>alter egos:</strong>${daticos["results"][i]["alter egos"]}</p>
-            <p><strong>Alias::</strong>${daticos["results"][i]["Alias:"]}</p>
-            <p><strong>Lugar de nacimiento:</strong>${daticos["results"][i]["Lugar de nacimiento"]}</p>
-            <p><strong>Primera presentación:</strong>${daticos["results"][i]["Primera presentación"]}</p>
-            <p><strong>Editor:</strong>${daticos["results"][i]["Editor"]}</p>
-            <p><strong>Alineacion:</strong>${daticos["results"][i]["Alineacion"]}</p>
+            <p><strong>Nombre completo:</strong>${daticos["results"][i]["biography"]["full-name"]}</p>
+            <p><strong>alter egos:</strong>${daticos["results"][i]["biography"]["alter-egos"]}</p>
+            <p><strong>Alias::</strong>${daticos["results"][i][ "biography"]["aliases"]}</p>
+            <p><strong>Lugar de nacimiento:</strong>${daticos["results"][i][ "biography"]["place-of-birth"]}</p>
+            <p><strong>Primera presentación:</strong>${daticos["results"][i][ "biography"]["first-appearance"]}</p>
+            <p><strong>Editor:</strong>${daticos["results"][i][ "biography"]["publisher"]}</p>
+            <p><strong>Alineacion:</strong>${daticos["results"][i][ "biography"][ "alignment"]}</p>
 
         </div>
                         `
