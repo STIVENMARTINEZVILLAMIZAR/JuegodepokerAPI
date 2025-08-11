@@ -46,7 +46,6 @@ h1{
     padding-top: 15px;
     padding-right: 350px;
     padding-left: 12px;
-    
 }
 
 .cuadroTexto button{
@@ -77,6 +76,8 @@ h1{
     align-items: center;
     justify-content: center;
     bottom: 5vi;
+    opacity: 0.9;
+    
 }
 
 .botones{
@@ -98,4 +99,29 @@ h1{
     margin-right: 10px;
     background-color: white;
     border-radius: 100%;
+}
+
+.infoText p{
+    margin-top: 10px;
+    font-size: 20px;
+
+}
+
+.capsula2{
+    display: flex;
+    position: relative;
+   
+    color: white;
+    background-color: rgb(21, 25, 29);
+    border-radius: 50px;
+    flex-direction: row;
+    width: 10vw;
+    height: 5vh;
+    margin: 50px auto; 
+    align-items: center;
+    justify-content: center;
+    bottom: 5vi;
+    opacity: 0.5;
+    text-decoration: line-through;
+    
 }
