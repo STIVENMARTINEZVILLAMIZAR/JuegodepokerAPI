@@ -25,9 +25,77 @@ width: 100%;
 }
 
 h1{
+    position: relative;
     font-family: 'titulo', sans-serif;
     color: white;
     font-size: 100px;
     margin-top: 130px;
+    bottom: 3vi;
+    
 }
 
+.cuadroTexto input{
+  
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-color: black;
+    padding: 20px;
+    background-color: rgb(0, 0, 0.664);
+    padding-top: 15px;
+    padding-right: 350px;
+    padding-left: 12px;
+    
+}
+
+.cuadroTexto button{
+    position: relative;
+    right: 4px;
+    top: 3px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-color: rgb(0, 0, 0);
+    padding: 17px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+   
+}
+
+.capsula{
+    display: flex;
+    position: relative;
+    color: white;
+    background-color: rgb(21, 25, 29);
+    border-radius: 50px;
+    flex-direction: row;
+    width: 10vw;
+    height: 5vh;
+    margin: 50px auto; 
+    align-items: center;
+    justify-content: center;
+    bottom: 5vi;
+}
+
+.botones{
+    display: flex;
+}
+.completado img{
+
+    width: 50px;
+    margin-left: 20px;
+    margin-right: 10px;
+    background-color: white;
+    border-radius: 100%;
+}
+
+.eliminado img{
+
+    width: 50px;
+    margin-left: 20px;
+    margin-right: 10px;
+    background-color: white;
+    border-radius: 100%;
+}
